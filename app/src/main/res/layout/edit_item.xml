@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3"
+    tools:context="co.calendar.calendartrack.EditActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/editNum"
+        android:hint="item"
+        android:textColorHint="@color/gray4"
+        android:textColor="@color/white"
+        android:id="@+id/editItem" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/xBtn"
+        android:hint="cal"
+        android:maxLength="4"
+        android:inputType="number"
+        android:textColorHint="@color/gray4"
+        android:textColor="@color/white"
+        android:id="@+id/editNum" />
+
+    <ImageView
+        android:id="@+id/xBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/x_icon"/>
+
+</RelativeLayout>
